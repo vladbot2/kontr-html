@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ресторан "Vladbot"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Ресторан "Vladbot"</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Меню</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#contact">Контакти</a></li>
+                <li><a href="#order">Замовити онлайн</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="menu">
+        <h2>Наше меню</h2>
+        <ul>
+            <li>Салат «Грецький»  - 100 грн</li>
+            <li>Овочі-гриль - 150 грн</li>
+            <li>Бульйон з кнелями  - 160 грн</li>
+            <li>Кнеля із телятини  - 200 грн</li>
+            <li>Форель в солі  - 80 грн</li>
+            <li>Асорті м’ясне  - 120 грн</li>
+            <li>Картопля печена з салом - 130 грн</li>
+            <li>Буженина домашня - 180 грн</li>
+            <li>Салат по-селянськи - 220 грн</li>
+            <li>Тар-тар із тунця - 250 грн</li>
+            <li>Мільфей з телячої вирізки - 350 грн</li>
+            <li>Борщ  - 90 грн</li>
+            <li>«Крем-Брюле»  - 100 грн</li>
+            <li>Салат з копченим вугром - 110 грн</li>
+            <li>Картопля фрі - 70 грн</li>
+            <li>«Цинандалі» біле, 0,75 л - 40 грн</li>
+            <li>«Хванчкара» червоне, 0,75 л.  - 30 грн</li>
+            <li>«Бордо Суперіор» 0,75 л.  - 50 грн</li>
+        </ul>
+
+        <h3>Додати до замовлення:</h3>
+            <label for="dish">Оберіть страву:</label>
+            <select id="dish" name="dish">
+                <option value="Салат «Грецький»">Салат «Грецький» - 100 грн</option>
+                <option value="Овочі-гриль">Овочі-гриль - 150 грн</option>
+                <option value="Бульйон з кнелями">Бульйон з кнелями - 160 грн</option>
+                <option value="Кнеля із телятини">Кнеля із телятини - 200 грн</option>
+                <option value="Форель в солі">Форель в солі - 80 грн</option>
+                <option value="Асорті м’ясне">Асорті м’ясне - 120 грн</option>
+                <option value="Картопля печена з салом">Картопля печена з салом - 130 грн</option>
+                <option value="Буженина домашня">Буженина домашня - 180 грн</option>
+                <option value="Салат по-селянськи">Салат по-селянськи - 220 грн</option>
+                <option value="Тар-тар із тунця">Тар-тар із тунця - 250 грн</option>
+                <option value="Мільфей з телячої вирізки">Мільфей з телячої вирізки - 350 грн</option>
+                <option value="Борщ">Борщ - 90 грн</option>
+                <option value="«Крем-Брюле»">«Крем-Брюле» - 100 грн</option>
+                <option value="Салат з копченим вугром">Салат з копченим вугром - 110 грн</option>
+                <option value="Картопля фрі">Картопля фрі - 70 грн</option>
+                <option value="«Цинандалі» біле">«Цинандалі» біле, 0,75 л - 40 грн</option>
+                <option value="«Хванчкара» червоне">«Хванчкара» червоне, 0,75 л - 30 грн</option>
+                <option value="«Бордо Суперіор»">«Бордо Суперіор» 0,75 л - 50 грн</option>
+            </select>
+
+            <label for="quantity">Кількість:</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1" required>
+
+            <button type="submit">Додати до замовлення</button>
+        </form>
+    </section>
+
+    <section id="gallery">
+        <h2>Галерея</h2>
+        <div class="gallery-container">
+            <img src="img/caption.jpg" alt="">
+            <img src="img/shutterstock_507078310_1576510459-e1576510491720-630x315.jpg" alt="">
+            <img src="img/27cb479d86e77000c0b137990610d827.jpeg" alt="">
+            <img src="img/ffe54e61910862c026afa3482621bdf0.jpeg" alt="">
+            <img src="img/shokoladnaia-panna-k.jpg" alt="">
+            <img src="img/56fd15eac5a25727aac65da15926d34f.jpeg" alt="">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Контакти</h2>
+        <p>Адреса: вул. Проектна-16, 10, Рівне</p>
+        <p>Телефон: +38 (097) 262 94 62</p>
+        <p>Email: vladsidlar434.com.ua</p>
+    </section>
+
+    <section id="button">
+        <h2>Замовити онлайн</h2>
+        <form action="order-confirmation.html" method="get">
+            <label for="name">Ваше ім'я:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" required>
+    
+            <label for="button-details">Деталі замовлення:</label>
+            <textarea id="button-details" name="button-details" required></textarea>
+    
+            <button type="submit">Відправити замовлення</button>
+        </form>
+    </section>
+    
+
+    <footer>
+        <p> © 2024 Ресторан "Vladbot".</p>
+    </footer>
+</body>
+</html>

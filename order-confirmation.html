@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ресторан "Vladbot"</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+
+        
+    </style>
+</head>
+<body>
+
+    <section id="button">
+        <h2>Замовити онлайн</h2>
+        <form id="orderForm">
+            <label for="name">Ваше ім'я:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" required>
+    
+            <label for="button-details">Деталі замовлення:</label>
+            <textarea id="button-details" name="button-details" required></textarea>
+    
+            <button type="submit">Відправити замовлення</button>
+        </form>
+    </section>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Дякуємо за ваше замовлення! Ми зв'яжемося з вами найближчим часом.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p> © 2024 Ресторан "Vladbot".</p>
+    </footer>
+
